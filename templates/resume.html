@@ -1,193 +1,290 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-        <div id="app">
-            <div id="page-top">
-                <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
-                <div id="sidebar-wrapper">
-                <ul class="sidebar-nav">
-                    <li class="sidebar-brand"><a class="js-scroll-trigger" href="#page-top">Check Me Out!</a></li>
-                    <li class="sidebar-nav-item"><a class="js-scroll-trigger" href="#page-top">Home Page</a></li>
-                    <li class="sidebar-nav-item"><a class="js-scroll-trigger" href="#about">About Me</a></li>
-                    <li class="sidebar-nav-item"><a class="js-scroll-trigger" href="#services">Resume</a></li>
-                    <li class="sidebar-nav-item"><a class="js-scroll-trigger" href="#portfolio">Portfolio</a></li>
-                    <li class="sidebar-nav-item"><a class="js-scroll-trigger" href="#contact">Contact Me</a></li>
-                </ul>
-                </div>
-                <div id="entire-page">
-                        <header class="masthead d-flex">
-                            <div class="container banner-text my-auto">
-                                <h1 class="mb-1"><span class="bold">Shehu</span><br> Olatunji Muhammad</h1>
-                                <br>
-                                <h3 class="mb-4"><em class="type">Smar</em></h3>
-                                <ul class="social-icons">
-                                    <li class="">
-                                        <div class="icons">
-                                            <a href="https://www.linkedin.com/in/M-Shehu/" target="blank"><i class="icon-social-linkedin"></i></a>
-                                        </div>
-                                    </li>
-                                    <li class="">
-                                        <div class="icons">
-                                            <a href="https://github.com/M-Shehu" target="blank"><i class="icon-social-github"></i></a>
-                                        </div>
-                                    </li>
-                                    <li class="">
-                                        <div class="icons">
-                                            <a href="mailto: mag.shehu@gmail.com" target="blank"><i class="fas fa-envelope"></i></a>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <a class="btn btn-secondary btn-xl js-scroll-trigger banner-btn" id="banner-btn" href="#about">Come on in</a>
-                            </div>
-                            <div class="overlay"></div>
-                        </header>
+
+            <!-- styling -->
+            <!-- <style>
+                    .callout{
+                        background:-webkit-gradient(linear,left top,right top,from(rgba(255,255,255,.1)),to(rgba(255,255,255,.1))),url("{% static 'img/resume.jpg' %}");
+                        background:linear-gradient(90deg,rgba(255,255,255,.1) 0,rgba(255,255,255,.1) 100%),url("{% static 'img/resume.jpg' %}");
+                    }
+                    .canvas{width: 380px; 
+                        height: 276.8px;
+                    }
+            </style> -->
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         
-                        <section class="content-section" id="about">
-                            <div class="container text-center">
-                                <div class="row about">
-                                <div id="3js-globe" class="globe">
-                                    <canvas width="380" height="276" style="width: 380px; height: 276.8px;"></canvas>
-                                </div>
-                                <div class="about-text">
-                                    <h2>Hello World!</h2>
-                                    <p class="lead mb-5">I've always loved the phrase Hello World! It's a powerful phrase that not only signifies the beginning of your programming journey, it also sets you up on the world stage for discovery.
-                                    <br>
-                                    <br>So Welcome to my little corner of the world.</p>
-                                </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="content-section bg-primary text-white text-center" id="services">
-                            <div class="container">
-                                <div class="content-section-heading">
-                                <h3 class="text-secondary mb-0">Competencies</h3>
-                                <h2 class="mb-5">What Can I Do?</h2>
-                                </div>
-                                <div class="row">
-                                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                                    <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-screen-desktop"></i></span>
-                                    <h4><strong>FullStack Developer</strong></h4>
-                                    <p class="text-faded mb-0">I develop for web. I work with React, Redux, Node, Docker, MongoDB, MySQL and some love. This site is build on React!</p>
-                                </div>
-                                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                                    <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-notebook"></i></span>
-                                    <h4><strong>Electronics Engineer</strong></h4>
-                                    <p class="text-faded mb-0">Master's in Electrical Electronics Engineering from the University of Glasgow. So rest assured that I can build you a battle robot from legos</p>
-                                </div>
-                                <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-                                    <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-emotsmile"></i></span>
-                                    <h4><strong>Graphics Designer</strong></h4>
-                                    <p class="text-faded mb-0">I draw shapes and make things look pretty. Click on the icon to check out my previous work.</p>
-                                </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-like"></i></span>
-                                    <h4><strong>Utility Player</strong></h4>
-                                    <p class="text-faded mb-0">I work well with others and can navigate the dynamics of the toughest teams. </p>
-                                </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="callout content-section">
-                        <div class="container text-center">
-                            <h2 class="mx-auto mb-5">Download My Resume!</h2>
-                            <a class="btn btn-primary btn-xl" href="https://s3-us-west-1.amazonaws.com/shehu.dev/Shehu+CV_Graphical_General.pdf">Download Here</a>
-                        </div>
-                        </section>
-                        <section class="content-section" id="portfolio">
-                            <div class="container">
-                                <div id="3js-porfolio"></div>
-                                <div class="content-section-heading text-center">
-                                    <h3 class="text-secondary mb-0">Portfolio</h3>
-                                    <h2 class="mb-5">What Projects have I Done?</h2>
-                                </div>
-                                <div class="row no-gutters">
-                                    <div class="col-lg-6">
-                                        <a class="portfolio-item" href="https://sound-of-the-soul.herokuapp.com/" target="blank">
-                                        <span class="caption">
-                                            <span class="caption-content">
-                                            <h2>Soul</h2>
-                                            <p class="mb-0">A full stack music web application which allows users to sign up &
-                                                make and manage their own personal playlist.</p>
-                                            </span>
-                                        </span>
-                                        <img class="img-fluid" src="/static/img/soul.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <a class="portfolio-item" href="https://faruqs-todo-app.herokuapp.com/" target="blank">
-                                        <span class="caption">
-                                            <span class="caption-content">
-                                                <h2>ToDo</h2>
-                                                <p class="mb-0">A full stack todo list web applicatipn with responsive UI which makes it easy for you to
-                                                    create and organize your tasks.</p>
-                                            </span>
-                                        </span>
-                                        <img class="img-fluid" src="/static/img/ToDo.png" alt="" style="object-fit: contain;">
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <a class="portfolio-item" href="#">
-                                        <span class="caption">
-                                            <span class="caption-content">
-                                            <h2>Foodie</h2>
-                                            <p class="mb-0">Coming Soon.</p>
-                                            </span>
-                                        </span>
-                                        <img class="img-fluid" src="/static/img/Foodie.jpeg" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <div style="position: relative; min-height: 100vh; height: 1277px; display: block;">
-                            <section id="bottom-container">
-                                <div class="container text-center" id="contact-container">
-                            
-                                <div class="content-section-heading" id="contact-heading">
-                                            <h3 class="text-secondary mb-0">Contact Me</h3>
-                                            <h2 class="mb-5">Let's Talk</h2>
-                                </div>
-                            
-                                    <div id="contact">
-                                    <form class="contact-form" method="POST" action="" class="p-3 border border-2">
-                                        {% csrf_token %}
-                                        <div class="input-field">
-                                        <label class="message-name" for="message-name">Your Name</label>
-                                        <input name="name" class="message-name" type="text" placeholder="Your Name" value="">
-                                        </div>
-                                        <div class="input-field">
-                                        <label class="message-email" for="message-email">Your Email</label>
-                                        <input name="email" class="message-email" type="email" placeholder="your@email.com" required="" value="">
-                                        </div>
-                                        <div class="input-field">
-                                        <label class="message" for="message-input">Your Message</label>
-                                        <textarea name="message" class="message-input" type="text" placeholder="Please write your message here" required=""> </textarea>
-                                        </div>
-                                        <div class="button--container"> 
-                                            <button type="submit" name="contact" class="btn btn-secondary">Send Message</button> 
-                                        </div>
-                                    </form>
-                                    </div>
-                                </div>
-                                
-                            </section>
-                        
-                            <footer class="footer text-center" id="copyright">
-                                <div style="position: relative; left: -50%;">
-                                    <div class="container"><p class="text-muted small mb-0">Copyright © Muhammad O. Shehu 2019</p></div>
-                                </div>
-                            </footer>
-                        </div>
-                        <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top" style="display: inline;"><i class="fas fa-angle-up"></i></a>
-                </div>
-            </div>  
+        <link href="{% static 'styles.css' %}" rel="stylesheet" type="text/css">
+        <!-- Fontawesome CDN Link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+        <script src="{% static 'script.js' %}" defer></script>
+        <script src="{% static 'textChange.js' %}" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
+
+         <title>My Resume</title>
+    </head>
+
+    
+    <body>
+        <!-- Move to up button -->
+        <div class="scroll-button">
+          <a href="#home"><i class="fas fa-arrow-up"></i></a>
         </div>
+        <!-- navgaition menu -->
+        <nav>
+          <div class="navbar">
+            <div class="logo">
+              <a href="https://training.zuri.team/"> <img class="logo-img" src="/static/img/Hng.png" alt=""> HNG</a>
+            </div>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <div class="cancel-btn">
+                  <i class="fas fa-times"></i>
+                </div>
+            </ul>
+            <div class="media-icons">
+              <a href="https://www.linkedin.com/in/faruq-abdulsalam-b2847b160/"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://twitter.com/_Ace_II/"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/faruq.t/"><i class="fab fa-instagram"></i></a>
+              <a href="https://github.com/Faruqt"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+        </nav>
+      
+      <!-- Home Section Start -->
+       <section class="home top-section" id="home">
+         <div class="home-content">
+           <div class="text">
+             <div class="text-one">Welcome to my World,</div>
+             <div class="text-two">I'm Faruq Abdulsalam</div>
+             <div id="word" class="text-three">Web Developer</div>
+             <!-- <h3 class="mb-4"><em id="word"></em></h3> -->
+           </div>
+         </div>
+       </section>
+      
+      <!-- About Section Start -->
+      <section class="about" id="about">
+        <div class="content">
+          <div class="title"><span>About Me</span></div>
+        <div class="about-details">
+          <div class="left">
+            <img src="{% static 'img/Faruq1.png' %}" alt="">
+          </div>
+          <div class="right">
+            <p>I am an enthusiastic developer who is willing to develop himself, learn new skills and achieve great things in the software field. I am very much self-driven as this can be confirmed with the personal projects I have embarked on and with self motivation I was able to complete the projects</p>
+            <div class="button">
+              <!-- <button>Download CV</button> -->
+              <a class="cv-button" href="https://resume.io/r/Gdddi1EzB"> Download resume </a>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+      
+      <!-- My Skill Section Start -->
+      <!-- Section Tag and Other Div will same where we need to put same CSS -->
+      <section class="skills" id="skills">
+       <div class="content">
+         <div class="title"><span>My Skills</span></div>
+         <div class="skills-details">
+           <div class="text">
+             <div class="topic">Full stack web developer</div>
+             I am proficient in the following skills:
+           </div>
+           <div class="boxes">
+             <div class="box">
+               <div class="topic">Django</div>
+             </div>
+             <div class="box">
+               <div class="topic">Python</div>
+             </div>
+             <div class="box">
+               <div class="topic">JavaScript</div>
+             </div>
+             <div class="box">
+               <div class="topic">C</div>
+             </div>
+             <div class="box">
+                <div class="topic">HTML</div>
+              </div>
+              <div class="box">
+                <div class="topic">CSS</div>
+              </div>
+            </div>
+        
+         </div>
+       </div>
+      </section>
+      
+      <!-- My Services Section Start -->
+       <!-- <section class="services" id="services">
+         <div class="content">
+           <div class="title"><span>My Projects</span></div>
+           <div class="boxes">
+             <div class="box">
+                <a class="portfolio-item" href="https://sound-of-the-soul.herokuapp.com/" target="blank">
+
+               <div class="icon">
+                 <i class="fas fa-desktop"></i>
+                </div>
+                <div class="topic">Soul</div>
+                <p>A full stack music web application which allows users to sign up &
+                make and manage their own personal playlist.</p>
+                </a>
+           </div>
+             <div class="box">
+               <div class="icon">
+                 <i class="fas fa-paint-brush"></i>
+             </div>
+             <div class="topic">Graphic Design</div>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?</p>
+           </div>
+             <div class="box">
+               <div class="icon">
+                 <i class="fas fa-chart-line"></i>
+             </div>
+             <div class="topic">Digital Marketing</div>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?</p>
+           </div>
+             <div class="box">
+               <div class="icon">
+                 <i class="fab fa-android"></i>
+             </div>
+             <div class="topic">Icon Design</div>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?</p>
+           </div>
+             <div class="box">
+               <div class="icon">
+                 <i class="fas fa-camera-retro"></i>
+             </div>
+             <div class="topic">Photography</div>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?</p>
+           </div>
+             <div class="box">
+               <div class="icon">
+                 <i class="fas fa-tablet-alt"></i>
+             </div>
+             <div class="topic">Apps Devlopment</div>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?</p>
+           </div>
+         </div>
+         </div>
+       </section> -->
+
+       <section class="content-section" id="portfolio">
+        <div class="container">
+            <div id="3js-porfolio"></div>
+            <div class="content-section-heading text-center">
+                <!-- <h3 class="text-secondary mb-0">Portfolio</h3> -->
+                <div class="title"><span>Portfolio</span></div>
+                <h4 class="mb-5"> Projects I Have Done</h4>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="https://sound-of-the-soul.herokuapp.com/" target="blank">
+                    <span class="caption">
+                        <span class="caption-content">
+                        <h1>Soul</h1>
+                        <p class="mb-0">A full stack music web application </p>
+                        </span>
+                    </span>
+                    <img class="img-fluid" src="/static/img/soul.png" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="https://faruqs-todo-app.herokuapp.com/" target="blank">
+                    <span class="caption">
+                        <span class="caption-content">
+                            <h1>ToDo</h1>
+                            <p class="mb-0">A full stack todo list web application </p>
+                        </span>
+                    </span>
+                    <img class="img-fluid" src="/static/img/ToDo.png" alt="" style="object-fit: contain;">
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="#">
+                    <span class="caption">
+                        <span class="caption-content">
+                        <h1>Foodie</h1>
+                        <p class="mb-0">Coming Soon.</p>
+                        </span>
+                    </span>
+                    <img class="img-fluid" src="/static/img/Foodie.jpeg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="#">
+                    <span class="caption">
+                        <span class="caption-content">
+                        <h1>Reo</h1>
+                        <p class="mb-0">Coming Soon.</p>
+                        </span>
+                    </span>
+                    <img class="img-fluid reo" src="/static/img/empty.jpeg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+      <!-- Contact Me section Start -->
+      <section class="contact" id="contact">
+        <div class="content">
+          <div class="title"><span>Contact Me</span></div>
+          <div class="text">
+                <h4 class="mb-5">Let's Chat</h4>
+          </div>
+      
+          <div id="contact">
+          <form class="contact-form" method="POST" action="" class="p-3 border border-2">
+              {% csrf_token %}
+              <div class="input-field">
+              <label class="message-name" for="message-name">Your Name</label>
+              <input name="name" class="message-name" type="text" placeholder="Your Name" value="">
+              </div>
+              <div class="input-field">
+              <label class="message-email" for="message-email">Your Email</label>
+              <input name="email" class="message-email" type="email" placeholder="your@email.com" required="" value="">
+              </div>
+              <div class="input-field">
+              <label class="message" for="message-input">Your Message</label>
+              <textarea name="message" class="message-input" type="text" placeholder="Please write your message here" required=""> </textarea>
+              </div>
+              <div class=" button button--container"> 
+                  <button type="submit" name="contact" class="btn">Send Message</button> 
+              </div>
+          </form>
+      </div>
+      
+      
+        </div>
+      </section>
+      
+      <!-- Footer Section Start -->
+      <footer>
+        <div class="text">
+          <span>Created By <a href="https://www.linkedin.com/in/faruq-abdulsalam-b2847b160/">Faruq Abdulsalam</a> | &#169; 2021 All Rights Reserved</span>
+        </div>
+      </footer>
+      
+        <!-- <script src="script.js"></script> -->
     </body>
 </html>
+
+
+
 
