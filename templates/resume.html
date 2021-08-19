@@ -1,0 +1,290 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <!-- styling -->
+            <!-- <style>
+                    .callout{
+                        background:-webkit-gradient(linear,left top,right top,from(rgba(255,255,255,.1)),to(rgba(255,255,255,.1))),url("{% static 'img/resume.jpg' %}");
+                        background:linear-gradient(90deg,rgba(255,255,255,.1) 0,rgba(255,255,255,.1) 100%),url("{% static 'img/resume.jpg' %}");
+                    }
+                    .canvas{width: 380px; 
+                        height: 276.8px;
+                    }
+            </style> -->
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <link href="{% static 'styles.css' %}" rel="stylesheet" type="text/css">
+        <!-- Fontawesome CDN Link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+        <script src="{% static 'script.js' %}" defer></script>
+        <script src="{% static 'textChange.js' %}" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
+
+         <title>My Resume</title>
+    </head>
+
+    
+    <body>
+        <!-- Move to up button -->
+        <div class="scroll-button">
+          <a href="#home"><i class="fas fa-arrow-up"></i></a>
+        </div>
+        <!-- navgaition menu -->
+        <nav>
+          <div class="navbar">
+            <div class="logo">
+              <a href="https://training.zuri.team/"> <img class="logo-img" src="/static/img/Hng.png" alt=""> HNG</a>
+            </div>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <div class="cancel-btn">
+                  <i class="fas fa-times"></i>
+                </div>
+            </ul>
+            <div class="media-icons">
+              <a href="https://www.linkedin.com/in/faruq-abdulsalam-b2847b160/"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://twitter.com/_Ace_II/"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/faruq.t/"><i class="fab fa-instagram"></i></a>
+              <a href="https://github.com/Faruqt"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+        </nav>
+      
+      <!-- Home Section Start -->
+       <section class="home top-section" id="home">
+         <div class="home-content">
+           <div class="text">
+             <div class="text-one">Welcome to my World,</div>
+             <div class="text-two">I'm Faruq Abdulsalam</div>
+             <div id="word" class="text-three">Web Developer</div>
+             <!-- <h3 class="mb-4"><em id="word"></em></h3> -->
+           </div>
+         </div>
+       </section>
+      
+      <!-- About Section Start -->
+      <section class="about" id="about">
+        <div class="content">
+          <div class="title"><span>About Me</span></div>
+        <div class="about-details">
+          <div class="left">
+            <img src="{% static 'img/Faruq1.png' %}" alt="">
+          </div>
+          <div class="right">
+            <p>I am an enthusiastic developer who is willing to develop himself, learn new skills and achieve great things in the software field. I am very much self-driven as this can be confirmed with the personal projects I have embarked on and with self motivation I was able to complete the projects</p>
+            <div class="button">
+              <!-- <button>Download CV</button> -->
+              <a class="cv-button" href="https://resume.io/r/Gdddi1EzB"> Download resume </a>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+      
+      <!-- My Skill Section Start -->
+      <!-- Section Tag and Other Div will same where we need to put same CSS -->
+      <section class="skills" id="skills">
+       <div class="content">
+         <div class="title"><span>My Skills</span></div>
+         <div class="skills-details">
+           <div class="text">
+             <div class="topic">Full stack web developer</div>
+             I am proficient in the following skills:
+           </div>
+           <div class="boxes">
+             <div class="box">
+               <div class="topic">Django</div>
+             </div>
+             <div class="box">
+               <div class="topic">Python</div>
+             </div>
+             <div class="box">
+               <div class="topic">JavaScript</div>
+             </div>
+             <div class="box">
+               <div class="topic">C</div>
+             </div>
+             <div class="box">
+                <div class="topic">HTML</div>
+              </div>
+              <div class="box">
+                <div class="topic">CSS</div>
+              </div>
+            </div>
+        
+         </div>
+       </div>
+      </section>
+      
+      <!-- My Services Section Start -->
+       <!-- <section class="services" id="services">
+         <div class="content">
+           <div class="title"><span>My Projects</span></div>
+           <div class="boxes">
+             <div class="box">
+                <a class="portfolio-item" href="https://sound-of-the-soul.herokuapp.com/" target="blank">
+
+               <div class="icon">
+                 <i class="fas fa-desktop"></i>
+                </div>
+                <div class="topic">Soul</div>
+                <p>A full stack music web application which allows users to sign up &
+                make and manage their own personal playlist.</p>
+                </a>
+           </div>
+             <div class="box">
+               <div class="icon">
+                 <i class="fas fa-paint-brush"></i>
+             </div>
+             <div class="topic">Graphic Design</div>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?</p>
+           </div>
+             <div class="box">
+               <div class="icon">
+                 <i class="fas fa-chart-line"></i>
+             </div>
+             <div class="topic">Digital Marketing</div>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?</p>
+           </div>
+             <div class="box">
+               <div class="icon">
+                 <i class="fab fa-android"></i>
+             </div>
+             <div class="topic">Icon Design</div>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?</p>
+           </div>
+             <div class="box">
+               <div class="icon">
+                 <i class="fas fa-camera-retro"></i>
+             </div>
+             <div class="topic">Photography</div>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?</p>
+           </div>
+             <div class="box">
+               <div class="icon">
+                 <i class="fas fa-tablet-alt"></i>
+             </div>
+             <div class="topic">Apps Devlopment</div>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?</p>
+           </div>
+         </div>
+         </div>
+       </section> -->
+
+       <section class="content-section" id="portfolio">
+        <div class="container">
+            <div id="3js-porfolio"></div>
+            <div class="content-section-heading text-center">
+                <!-- <h3 class="text-secondary mb-0">Portfolio</h3> -->
+                <div class="title"><span>Portfolio</span></div>
+                <h4 class="mb-5"> Projects I Have Done</h4>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="https://sound-of-the-soul.herokuapp.com/" target="blank">
+                    <span class="caption">
+                        <span class="caption-content">
+                        <h1>Soul</h1>
+                        <p class="mb-0">A full stack music web application </p>
+                        </span>
+                    </span>
+                    <img class="img-fluid" src="/static/img/soul.png" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="https://faruqs-todo-app.herokuapp.com/" target="blank">
+                    <span class="caption">
+                        <span class="caption-content">
+                            <h1>ToDo</h1>
+                            <p class="mb-0">A full stack todo list web application </p>
+                        </span>
+                    </span>
+                    <img class="img-fluid" src="/static/img/ToDo.png" alt="" style="object-fit: contain;">
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="#">
+                    <span class="caption">
+                        <span class="caption-content">
+                        <h1>Foodie</h1>
+                        <p class="mb-0">Coming Soon.</p>
+                        </span>
+                    </span>
+                    <img class="img-fluid" src="/static/img/Foodie.jpeg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="#">
+                    <span class="caption">
+                        <span class="caption-content">
+                        <h1>Reo</h1>
+                        <p class="mb-0">Coming Soon.</p>
+                        </span>
+                    </span>
+                    <img class="img-fluid reo" src="/static/img/empty.jpeg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+      <!-- Contact Me section Start -->
+      <section class="contact" id="contact">
+        <div class="content">
+          <div class="title"><span>Contact Me</span></div>
+          <div class="text">
+                <h4 class="mb-5">Let's Chat</h4>
+          </div>
+      
+          <div id="contact">
+          <form class="contact-form" method="POST" action="" class="p-3 border border-2">
+              {% csrf_token %}
+              <div class="input-field">
+              <label class="message-name" for="message-name">Your Name</label>
+              <input name="name" class="message-name" type="text" placeholder="Your Name" value="">
+              </div>
+              <div class="input-field">
+              <label class="message-email" for="message-email">Your Email</label>
+              <input name="email" class="message-email" type="email" placeholder="your@email.com" required="" value="">
+              </div>
+              <div class="input-field">
+              <label class="message" for="message-input">Your Message</label>
+              <textarea name="message" class="message-input" type="text" placeholder="Please write your message here" required=""> </textarea>
+              </div>
+              <div class=" button button--container"> 
+                  <button type="submit" name="contact" class="btn">Send Message</button> 
+              </div>
+          </form>
+      </div>
+      
+      
+        </div>
+      </section>
+      
+      <!-- Footer Section Start -->
+      <footer>
+        <div class="text">
+          <span>Created By <a href="https://www.linkedin.com/in/faruq-abdulsalam-b2847b160/">Faruq Abdulsalam</a> | &#169; 2021 All Rights Reserved</span>
+        </div>
+      </footer>
+      
+        <!-- <script src="script.js"></script> -->
+    </body>
+</html>
+
+
+
+
