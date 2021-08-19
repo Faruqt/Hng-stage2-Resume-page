@@ -9,7 +9,7 @@ My portfolio website.
 
 ## Preview
 
-<img src="./static/img/Home.png">]
+<img src="./static/img/Home.png">
 
 
 **[View Live Preview](https://faruqs-resume.herokuapp.com)**
