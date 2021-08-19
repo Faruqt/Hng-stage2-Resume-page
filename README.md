@@ -3,13 +3,13 @@
 
 Home page view:  
 
-# [001 - Hello World](https://faruqs-resume.herokuapp.com/)
+# [Welcome to Faruq's world](https://faruqs-resume.herokuapp.com/)
 
 Weclome to my portfolio website.
 
 ## Preview
 
-<img src="./static/img/Home.png">](https://faruqs-resume.herokuapp.com/)
+<img src="./static/img/Home.png">]
 
 
 **[View Live Preview](https://faruqs-resume.herokuapp.com)**
