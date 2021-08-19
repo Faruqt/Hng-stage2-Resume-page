@@ -5,7 +5,7 @@ Home page view:
 
 # [Welcome to Faruq's world](https://faruqs-resume.herokuapp.com/)
 
-Weclome to my portfolio website.
+My portfolio website.
 
 ## Preview
 
