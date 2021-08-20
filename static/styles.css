@@ -527,10 +527,12 @@ button .btn:hover, .cv-button:hover{
 }
 .img-fluid {
   max-width: 100%;
-  height: 100%;
 }
 .reo{
-  height:100%;
+  object-fit: cover;
+  height: 100%;
+  width:100%;
+
 }
 
 .portfolio-item{
@@ -539,8 +541,12 @@ button .btn:hover, .cv-button:hover{
   overflow:hidden;
   max-width:530px;
   margin:auto auto 1rem;
+}
+
+.empty{
   height: 100%;
 }
+
 .portfolio-item .caption{
   display:-webkit-box;
   display:-ms-flexbox;
