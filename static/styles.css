@@ -60,6 +60,9 @@ nav .navbar .logo a{
 .media-icons{
   margin-top: .3rem;
 }
+.icons{
+  display: none;
+}
 nav.sticky .navbar .logo a{
   color: #fff;
 }
@@ -736,7 +739,7 @@ footer .text span a:hover{
     position: fixed;
     left: -100%;
     top: 0;
-    background: #0E2431;
+    background: #92b3d4;
     height: 100vh;
     max-width: 400px;
     width: 100%;
@@ -757,6 +760,10 @@ footer .text span a:hover{
 
   nav .navbar .media-icons{
     display: none;
+  }
+
+  nav .navbar ul .icons{
+    display: block;
   }
   nav .menu-btn,
   .navbar .menu .cancel-btn{
