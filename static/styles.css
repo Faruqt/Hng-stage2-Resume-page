@@ -147,6 +147,16 @@ nav .menu-btn:hover, nav.sticky .menu-btn:hover{
   font-size: 25px;
   color: #0E2431;
 }
+
+.home .text{
+margin-left: 20px;
+margin-top: 15px;
+}
+
+.home .text-one i{
+  color: #83aad4;
+}
+
 .home .text-two{
   color: #0E2431;
   font-size: 75px;
