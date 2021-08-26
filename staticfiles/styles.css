@@ -53,10 +53,12 @@ nav .navbar .logo a{
   font-size: 35px;
   color: #2d69a7;
 }
+
 .navbar .logo .logo-img{
   height: 40px;
   width:  40px;
   border-radius: 20px;
+  margin-right: 5px;
 }
 .media-icons{
   margin-top: .3rem;
@@ -803,7 +805,18 @@ footer .text span a:hover{
   }
   .contact .text{
     width: 100%;
+  }
 }
+@media (max-width: 460px){
+  nav .navbar .logo a{
+    font-size: 30px;
+  }
+  nav .menu-btn{
+    margin-top: 0.8em;
+  }
+  nav.sticky .menu-btn{
+    margin-top: 0.5em;
+  }
 }
 
 @media (max-width: 500px){
