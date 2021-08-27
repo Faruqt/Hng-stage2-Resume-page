@@ -30,7 +30,7 @@ cancelBtn.onclick = function(){
   navBar.classList.remove("active");
   menuBtn.style.opacity = "1";
   menuBtn.style.pointerEvents = "auto";
-  body.style.overflow = "auto";
+  body.style.overflow = "scroll";
   scrollBtn.style.pointerEvents = "auto";
 }
 
@@ -41,5 +41,6 @@ for (var i = 0; i < navLinks.length; i++) {
     navBar.classList.remove("active");
     menuBtn.style.opacity = "1";
     menuBtn.style.pointerEvents = "auto";
+    body.style.overflow = "scroll";
   });
 }
