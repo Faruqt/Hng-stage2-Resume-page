@@ -551,7 +551,7 @@ button .btn:hover, .cv-button:hover{
 .portfolio-item{
   display:block;
   position:relative;
-  overflow:hidden;
+  /* overflow:hidden; */
   max-width:530px;
   margin:auto auto 1rem;
 }
@@ -701,8 +701,8 @@ footer .text span a:hover{
   bottom: 20px;
   right: 20px;
   color: #fff;
-  background: #2d69a7;
-  padding: 7px 12px;;
+  background: #10355b;
+  padding: 4px 12px;;
   font-size: 18px;
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.15);
