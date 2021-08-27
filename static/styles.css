@@ -53,10 +53,12 @@ nav .navbar .logo a{
   font-size: 35px;
   color: #2d69a7;
 }
+
 .navbar .logo .logo-img{
   height: 40px;
   width:  40px;
   border-radius: 20px;
+  margin-right: 5px;
 }
 .media-icons{
   margin-top: .3rem;
@@ -549,7 +551,7 @@ button .btn:hover, .cv-button:hover{
 .portfolio-item{
   display:block;
   position:relative;
-  overflow:hidden;
+  /* overflow:hidden; */
   max-width:530px;
   margin:auto auto 1rem;
 }
@@ -699,8 +701,8 @@ footer .text span a:hover{
   bottom: 20px;
   right: 20px;
   color: #fff;
-  background: #2d69a7;
-  padding: 7px 12px;;
+  background: #10355b;
+  padding: 4px 12px;;
   font-size: 18px;
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.15);
@@ -803,7 +805,18 @@ footer .text span a:hover{
   }
   .contact .text{
     width: 100%;
+  }
 }
+@media (max-width: 460px){
+  nav .navbar .logo a{
+    font-size: 30px;
+  }
+  nav .menu-btn{
+    margin-top: 0.8em;
+  }
+  nav.sticky .menu-btn{
+    margin-top: 0.5em;
+  }
 }
 
 @media (max-width: 500px){
