@@ -129,7 +129,7 @@ nav.sticky .menu-btn{
 .navbar .menu .menu-btn{
   color: #fff;
 }
-nav .menu-btn:hover, nav.sticky .menu-btn:hover{
+nav .menu-btn:hover, nav.sticky .menu-btn:hover, ol li a{
   color:#2d69a7;
 }
 
@@ -529,6 +529,9 @@ button .btn:hover, .cv-button:hover{
 /* portfolio styling */
 .content-section{
   min-height:100vh;
+  padding: 5rem 2rem;
+}
+.blog-section{
   padding: 5rem 2rem;
 }
 .content-section-heading h2{

@@ -16,11 +16,12 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
         
         <link href="{% static 'styles.css' %}" rel="stylesheet" type="text/css">
         <!-- Fontawesome CDN Link -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
         <script src="{% static 'script.js' %}" defer></script>
         <script src="{% static 'textChange.js' %}" defer></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
@@ -45,12 +46,14 @@
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#Blog">Blog</a></li>
                 <li><a href="#contact">Contact Me</a></li>
                 <li class=icons>
                     <a href="https://www.linkedin.com/in/faruq-abdulsalam-b2847b160/"><i class="fab fa-linkedin-in"></i></a>
                     <a href="https://twitter.com/_Ace_II/"><i class="fab fa-twitter"></i></a>
-                    <a href="https://medium.com/@faruqabdulsalam"><i class="fab fa-medium"></i></a>
                     <a href="https://github.com/Faruqt"><i class="fab fa-github"></i></a> 
+                    <a href="https://dev.to/faruqt"><i class="fa fa-dev-to"></i></a> 
+                    <a href="https://medium.com/@faruqabdulsalam"><i class="fab fa-medium"></i></a>
                 </li>
                 <div class="cancel-btn">
                   <i class="fas fa-times"></i>
@@ -59,8 +62,9 @@
             <div class="media-icons">
               <a href="https://www.linkedin.com/in/faruq-abdulsalam-b2847b160/"><i class="fab fa-linkedin-in"></i></a>
               <a href="https://twitter.com/_Ace_II/"><i class="fab fa-twitter"></i></a>
+              <a href="https://github.com/Faruqt"><i class="fab fa-github"></i></a> 
+              <a href="https://dev.to/faruqt"><i class="fa fa-dev-to"></i></a> 
               <a href="https://medium.com/@faruqabdulsalam"><i class="fab fa-medium"></i></a>
-              <a href="https://github.com/Faruqt"><i class="fab fa-github"></i></a>
             </div>
           </div>
           <div class="menu-btn">
@@ -125,7 +129,7 @@
                 <div class="topic">Golang</div>
               </div>
               <div class="box">
-                <div class="topic">CSS</div>
+                <div class="topic">React</div>
               </div>
             </div>
         
@@ -138,7 +142,6 @@
         <div class="container">
             <div id="3js-porfolio"></div>
             <div class="content-section-heading text-center">
-                <!-- <h3 class="text-secondary mb-0">Portfolio</h3> -->
                 <div class="title"><span>Portfolio</span></div>
                 <h4 class="mb-5"> Projects I Have Done</h4>
             </div>
@@ -166,16 +169,16 @@
                     </a>
                 </div>
                 <div class="col-lg-6">
-                    <a class="portfolio-item" href="#">
-                    <span class="caption">
-                        <span class="caption-content">
-                        <h1>Foodie</h1>
-                        <p class="mb-0">Coming Soon.</p>
-                        </span>
-                    </span>
-                    <img class="img-fluid" src="/static/img/Foodie.jpeg" alt="">
-                    </a>
-                </div>
+                  <a class="portfolio-item" href="https://drive.google.com/file/d/1IIB4d_QSYwb53Ct8rm-Gv7V_IWEHrPSQ/view">
+                  <span class="caption">
+                      <span class="caption-content">
+                      <h1>Foodie</h1>
+                      <p class="mb-0">An online restaurant application</p>
+                      </span>
+                  </span>
+                  <img class="img-fluid" src="/static/img/Foodie.jpeg" alt="">
+                  </a>
+               </div>
                 <div class="col-lg-6">
                     <a class="portfolio-item empty" href="#">
                     <span class="caption">
@@ -189,6 +192,25 @@
                 </div>
             </div>
         </div>
+    </section>
+    <!-- Blog -->
+    <section class="blog-section" id="Blog">
+      <div class="container">
+          <div id="3js-porfolio"></div>
+          <div class="content-section-heading text-center">
+              <div class="title"><span>Blog</span></div>
+              <h4 class="mb-5">Technical Articles</h4>
+          </div>
+          <div class="row no-gutters">
+              <div class="col-lg-6">
+                  <ol>
+                    <li> <a href="https://dev.to/faruqt/consuming-coindesk-s-api-with-django-and-chart-js-part-1-5ehb">Consuming CoinDesk's API with Django and ChartJS</a> </li>
+                    <li> <a href="https://dev.to/faruqt/build-a-simple-guessing-game-in-golang-48ig">Building a guessing game in Golang</a> </li>
+                  </ol>
+              </div>
+            </div>
+          </div>
+      </div>
     </section>
       <!-- Contact Me section Start -->
       <section class="contact" id="contact">
