@@ -29,7 +29,7 @@ def my_resume_view(request):
             }
             message = '\n'.join(body.values())
             mail_from= settings.EMAIL_HOST_USER
-            mail_to= ['faruqabdulsalam10@gmail.com']
+            mail_to= ['faruqabdulsalam@yahoo.com']
             send_mail(
                     subject,
                     message,
