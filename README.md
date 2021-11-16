@@ -1,4 +1,9 @@
 # Resume Page built with Django and javascript
 
+# [Welcome to Faruq's world](https://faruqs-resume.herokuapp.com/)
 
-Home page view: <img src="./static/img/Home.png"> 
+## Tech Stack
+
+Django(Python),JavaScript, HTML5,CSS, 
+
+
