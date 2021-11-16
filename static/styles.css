@@ -619,7 +619,11 @@ clip-path:inset(2rem)
   }
 }
 
-
+@media (max-width:992px){
+  .empty {
+    height: revert;
+  }
+}
 /* My Services CSS */
 .services .boxes{
   display: flex;

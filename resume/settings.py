@@ -141,4 +141,3 @@ EMAIL_HOST_USER = 'resumemail17@gmail.com'
 EMAIL_HOST_PASSWORD = 'resmail123' 
 
 django_heroku.settings(locals())
-
