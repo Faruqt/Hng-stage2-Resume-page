@@ -618,7 +618,7 @@ clip-path:inset(2rem)
       clip-path:inset(2rem)
   }
   .btc{
-    height: 100% !important;
+    height: 100%;
   }
 }
 
