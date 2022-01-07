@@ -181,7 +181,9 @@ margin-top: 15px;
 #contact{
   text-align: center;
 }
-
+.shoot .eml{
+  color:#007bff;
+}
 /* contact form*/
 
 #contact{
@@ -842,3 +844,4 @@ footer .text span a:hover{
     color: #4070f4;
   }
 }
+
