@@ -25,7 +25,7 @@
         <script src="{% static 'textChange.js' %}" defer></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
 
-         <title>My Resume</title>
+         <title>Faruq Abdulsalam</title>
     </head>
 
     
@@ -38,7 +38,7 @@
         <nav>
           <div class="navbar">
             <div class="logo">
-              <a href=""> <img class="logo-img" src="/static/img/Faruq1.png" alt="">My World</a>
+              <a href="">My World</a>
             </div>
             <ul class="menu">
                 <li><a href="#home">Home</a></li>
@@ -80,6 +80,10 @@
              <div id="word" class="text-three">Web Developer</div>
            </div>
          </div>
+         <div class="project-button">
+          <!-- <button>Download CV</button> -->
+          <a class="cv-button" href="#portfolio"> View selected projects </a>
+        </div>
        </section>
       
       <!-- About Section Start -->
@@ -91,7 +95,7 @@
             <img src="{% static 'img/Faruq1.png' %}" alt="">
           </div>
           <div class="right">
-            <p>I am a software engineer who enjoys talking with computers. I am very much self-driven & motivated and these can be exemplified by the numerous projects that i’ve embarked on & successfully completed</p>
+            <p>I am a software engineer who loves developing the web, enjoys talking with computers and helping other developers grow. As a technical writer i share the conversations i have with computers with the world on my blogs.</p>
             <div class="button">
               <!-- <button>Download CV</button> -->
               <a class="cv-button" href="https://resume.io/r/Gdddi1EzB"> View resume </a>
@@ -149,46 +153,91 @@
                     <span class="caption">
                         <span class="caption-content">
                         <h1>Grapepharm</h1>
-                        <p class="mb-0">Landing page for a budding startup built with React</p>
                         </span>
                     </span>
                     <img class="img-fluid" src="/static/img/Grapepharm.jpeg" alt="">
                     </a>
-                </div>
-                <div class="col-lg-6">
-                    <a class="portfolio-item" href="https://github.com/Faruqt/Python-Interpreter-for-ternary-operations">
-                    <span class="caption">
-                        <span class="caption-content">
-                        <h1>Python Interpreter</h1>
-                        <p class="mb-0">This interpreter understands and processes ternary operations</p>
-                        </span>
-                    </span>
-                    <img class="img-fluid" src="/static/img/python.png" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-6">
-                  <a class="portfolio-item btc" href="https://bitcoinprice-tracker.herokuapp.com/">
-                  <span class="caption">
-                      <span class="caption-content">
-                      <h1>Bitcoin Price Tracker</h1>
-                      <p class="mb-0">Track the historical daily price of bitcoin</p>
+                    <div class="description mb-4">
+                      <span class="caption-content2">
+                        <h4 class="caption-head">Grapepharm</h4> 
+                        <p class="mb-0">A landing page built for a pharmaceutical startup. It also contains an api for contact form submission </p>
+                        <br class="break">
+                        <br>
+                        <p> Technology Used: ReactJs, useState and useEffect hooks, react-toastify, and axios</p>
                       </span>
-                  </span>
-                  <img class="img-fluid" src="/static/img/Bitcoin.png" alt="">
-                  </a>
-                 </div>
+                      <div class="view-button">
+                        <a class="source-button" href="https://www.grapepharm.com/"> Visit site </a>
+                      </div>
+                    </div>
+                </div>
                 <div class="col-lg-6">
                   <a class="portfolio-item" href="https://foodies-world.herokuapp.com/">
                   <span class="caption">
                       <span class="caption-content">
                       <h1>Foodie</h1>
-                      <p class="mb-0">An online restaurant application</p>
                       </span>
                   </span>
                   <img class="img-fluid reo" src="/static/img/Foodie.jpeg" alt="">
                   </a>
+                  <div class="description mb-4">
+                    <span class="caption-content2">
+                      <h4 class="caption-head">Foodie</h4> 
+                      <p class="mb-0">An online restaurant application which customers can easily use to view available meals at the restaurant, add meals to their trays, change meals/ empty their trays and finally place orders.</p>
+                      <br>
+                      <p> Technology Used: Golang, JavaScript, PostgreSQL, Docker, Bootstrap.</p>
+                    </span>
+                    <div class="view-button">
+                      <a class="source-button mr-3" href="https://foodies-world.herokuapp.com/"> Visit site </a>
+                      <a class="source-button" href="https://github.com/Faruqt/Foodie"> View source code </a>
+                    </div>
+                  </div>
                </div>
-               <div class="col-lg-6">
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="https://github.com/Faruqt/Python-Interpreter-for-ternary-operations">
+                    <span class="caption">
+                        <span class="caption-content">
+                        <h1>Python Interpreter</h1>
+                        </span>
+                    </span>
+                    <img class="img-fluid" src="/static/img/python.png" alt="">
+                    </a>
+                    <div class="description mb-4">
+                      <span class="caption-content2">
+                        <h4 class="caption-head">Python Interpreter</h4> 
+                        <p class="mb-0">A python interpreter capable of understanding and processing ternary operations. </p>
+                        <br>
+                        <p> Technology Used: Python</p>
+                      </span>
+                      <br class="break">
+                      <div class="view-button">
+                        <a class="source-button" href="https://github.com/Faruqt/Python-Interpreter-for-ternary-operations"> View source code </a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                  <a class="portfolio-item" href="https://bitcoinprice-tracker.herokuapp.com/">
+                    <span class="caption">
+                        <span class="caption-content">
+                        <h1>Bitcoin Price Tracker</h1>
+                        </span>
+                    </span>
+                    <img class="img-fluid" src="/static/img/Bitcoin.png" alt="">
+                  </a>
+                  <div class="description mb-4">
+                    <span class="caption-content2">
+                      <h4 class="caption-head">Bitcoin Price Tracker</h4> 
+                      <p class="mb-0">An application which allows users to track the changes in price of bitcoin using Historical BPI data from CoinDesk. It allows at most 3 months worth of data to be displayed</p>
+                      <br class="break">
+                      <p> Technology Used: Django, Python, JavaScript, ChartJs</p>
+                    </span>
+                    <div class="view-button">
+                      <a class="source-button mr-3" href="https://bitcoinprice-tracker.herokuapp.com/"> Visit site </a>
+                      <a class="source-button" href="https://github.com/Faruqt/Bitcoin-Price-Tracker"> View source code </a>
+                    </div>
+                  </div>
+                </div>
+
+               <!-- <div class="col-lg-6">
                 <a class="portfolio-item" href="https://sound-of-the-soul.herokuapp.com/" target="blank">
                 <span class="caption">
                     <span class="caption-content">
@@ -198,40 +247,7 @@
                 </span>
                 <img class="img-fluid soul" src="/static/img/soul.png" alt="">
                 </a>
-               </div>
-               <div class="col-lg-6">
-                <a class="portfolio-item" href="https://faruqs-todo-app.herokuapp.com/" target="blank">
-                <span class="caption">
-                    <span class="caption-content">
-                        <h1>ToDo</h1>
-                        <p class="mb-0">A full stack todo list web application </p>
-                    </span>
-                </span>
-                <img class="img-fluid" src="/static/img/ToDo.png" alt="" style="object-fit: contain;">
-                </a>
-               </div>
-               <div class="col-lg-6">
-                  <a class="portfolio-item" href="#">
-                  <span class="caption">
-                      <span class="caption-content">
-                      <h1>Neo</h1>
-                      <p class="mb-0">Coming Soon.</p>
-                      </span>
-                  </span>
-                  <img class="img-fluid reo" src="/static/img/empty.jpeg" alt="">
-                  </a>
-               </div>
-               <div class="col-lg-6">
-                  <a class="portfolio-item" href="#">
-                  <span class="caption">
-                      <span class="caption-content">
-                      <h1>Neo</h1>
-                      <p class="mb-0">Coming Soon.</p>
-                      </span>
-                  </span>
-                  <img class="img-fluid reo" src="/static/img/empty.jpeg" alt="">
-                  </a>
-               </div>
+               </div> -->
             </div>
         </div>
     </section>

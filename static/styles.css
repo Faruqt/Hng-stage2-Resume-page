@@ -76,7 +76,7 @@ nav .navbar .menu{
 }
 nav .navbar .menu li{
   list-style: none;
-  margin: 0 8px;
+  margin: 0 25px;
 }
 .navbar .menu a{
   font-size: 18px;
@@ -754,7 +754,7 @@ footer .text span a:hover{
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1120px) {
   nav .navbar{
     width: 90%;
   }
