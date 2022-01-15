@@ -465,7 +465,25 @@ section .button button, .cv-button{
   transition: all 0.4s ease;
   color:#ffffff;
 }
-button .btn:hover, .cv-button:hover{
+.description .view-button .source-button{
+  outline: none;
+  padding: 6px 10px;
+  border-radius: 10px;
+  font-weight: 400;
+  background: #2d79b8;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  color:#ffffff;
+}
+
+
+.project-button{
+  margin-top: 80px;
+  text-align: center;
+}
+
+button .btn:hover, .cv-button:hover .project-button:hover{
   color: #10355b !important;
   background: #a7b6c3;
 }
@@ -556,8 +574,6 @@ button .btn:hover, .cv-button:hover{
 .portfolio-item{
   display:block;
   position:relative;
-  /* overflow:hidden; */
-  max-width:530px;
   margin:auto auto 1rem;
 }
 
@@ -565,10 +581,14 @@ button .btn:hover, .cv-button:hover{
   height: 100%;
 }
 
+.description .break{
+  display:none;
+}
+
 .portfolio-item .caption{
   display:-webkit-box;
   display:-ms-flexbox;
-  display:flex;
+  display:none;
   height:100%;
   width:100%;
   background-color:rgba(33,37,41,.2);
@@ -589,12 +609,22 @@ button .btn:hover, .cv-button:hover{
   font-weight:300;
   font-size:1.2rem
 }
+
+.description .caption-head{
+  color: #2d69a7;
+}
+
+.portfolio-item .caption h1{
+  display: none;
+}
+
 @media (min-width:992px){
   .portfolio-item{
       max-width:none;
       margin:0
       }
   .portfolio-item .caption{
+      display:flex;
       -webkit-transition:-webkit-clip-path .25s ease-out,background-color .7s;-webkit-clip-path:inset(0);
       clip-path:inset(0)
   }
@@ -619,8 +649,11 @@ clip-path:inset(2rem)
       -webkit-clip-path:inset(2rem);
       clip-path:inset(2rem)
   }
-  .btc{
-    height: 100%;
+  .portfolio-item:hover .caption h1{
+    display: block;
+  }
+  .description .break{
+    display:block;
   }
 }
 
@@ -631,7 +664,7 @@ clip-path:inset(2rem)
 }
 
 /* My Services CSS */
-.services .boxes{
+/* .services .boxes{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -674,7 +707,8 @@ clip-path:inset(2rem)
 .services .boxes .box:hover .topic,
 .services .boxes .box:hover p{
   color: #fff;
-}
+} */
+
 /* Contact Me CSS */
 .contact{
   background: #F0F8FF;
@@ -754,7 +788,7 @@ footer .text span a:hover{
   }
 }
 
-@media (max-width: 1120px) {
+@media (max-width: 1160px) {
   nav .navbar{
     width: 90%;
   }
@@ -812,14 +846,11 @@ footer .text span a:hover{
     align-items: center;
     width: 100%;
   }
-  .services .boxes .box{
-    margin: 20px 0;
-    width: 100%;
-  }
   .contact .text{
     width: 100%;
   }
 }
+
 @media (max-width: 460px){
   nav .navbar .logo a{
     font-size: 30px;
