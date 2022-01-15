@@ -482,9 +482,9 @@ section .button button, .cv-button{
   text-align: center;
 }
 
-button .btn:hover, .cv-button:hover, .project-button:hover, .source-button:hover{
+button .btn:hover, .cv-button:hover, .source-button:hover{
   color: #10355b !important;
-  background: #a7b6c3;
+  background: #a7b6c3 !important;
 }
 
 .btn:hover{
